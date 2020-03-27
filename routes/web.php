@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('main_menu');
-});
+
+
+Route::get("/", "MainController@mainMenu");
+Route::get("/list-all-books", "MainController@list_all_books");
+Route::get("/order-placed", "MainController@order_placed");
+Route::get("/purchases", "MainController@purchases");
+Route::get("/search", "MainController@search");
+Route::get("/search-result", "MainController@search_result");
+
+
+

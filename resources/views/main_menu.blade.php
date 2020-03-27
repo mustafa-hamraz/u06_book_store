@@ -9,7 +9,7 @@
         <!-- Styles -->
         <style>
             body{
-                background-color: #66ccff;
+                background-color: #f2f2f2;
             }
             table, th, td {
             padding-right: 5px;
@@ -21,17 +21,17 @@
         <h2> Book Store </h2>
         <table> 
             <th>
-                <form method="post" action="/search">
+                <form method="get" action="/search">
                     <input type="submit" value="Search">
                 </form>
             </th>
             <th>
-                <form method="post" action="/listAllBooks">
+                <form method="get" action="/list-all-books">
                     <input type="submit" value="List All Books">
                 </form>
             </th>
             <th>
-                <form method="post" action="/purchases">
+                <form method="get" action="/purchases">
                     <input type="submit" value="Purchases">
                 </form>
             </th>
